@@ -7,4 +7,5 @@ This project takes a dataset of pictures (2 pictures per 4 individuals) and comp
 
 In order to play the game, you must first download the folder of code and pictures (linked above). Open the sets of code in Matlab and ensure that the folder "Pictures" is in your current directory, alongside the two sets of code. When you run the Face Recognition set of code, it will upload the pictures into database and allow you to play the game detailed above. 
 
-![MatLab Gif](https://user-images.githubusercontent.com/79659030/110490159-0c186900-80be-11eb-999f-3220b971bbec.gif)
+![image](https://user-images.githubusercontent.com/79659030/110547298-bebbec00-80fd-11eb-858b-433f32f26fc9.png)
+
