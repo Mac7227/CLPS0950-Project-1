@@ -44,6 +44,7 @@ for ii = 1:size(rest_of_the_images,2); %% sets for loop from 1 to 7 (number of r
     drawnow; %% updates the figure in the subplot
 end
 
+%% Coding Below Done by Maia -- Research, coding, debugging took 10 hours
 Title = ' ' %% Creates variable Title to use for the title of the right side subplot
 if z == [450195808   400222880    91482416    95078072    37283160    29946568    27731112] %% values for z associated with images of Maia
     Title = 'Answer: Maia' %% if it is an image of Maia, change title of subplot to Answer: Maia
