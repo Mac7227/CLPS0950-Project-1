@@ -60,7 +60,7 @@ elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Maia2.jpg') %%if t
     Title = 'Answer: Maia' %%title of subplot is Answer: Maia
 elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac1.jpg') %%or if the image is the same 
     Title = 'Answer: Mac'
-elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac2.jpg') %%or if the image is the same 
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac2.jpg') %%or if the image is the 
     Title = 'Answer: Mac'
 elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Jarred1.jpg')
     Title = 'Answer: Jarred'
