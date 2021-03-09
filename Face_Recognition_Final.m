@@ -29,6 +29,9 @@ end %% ends for loop that creates the column of values for the rest of the image
 
 %% End of Mac's Coding Section -- Research, Coding, and DeBugging took 20 Hours
 
+%% Below Coded by Neil -- Line 34 - 47
+
+
 subplot(121); %% sets location of image below
 imshow(reshape(random_image,287,287)); %% presents the randomly indexed picture to the above location and sets size
 Guess = ['Guess:',' ', input('Guess Who this is? ', 's')]; %% sets variable to ask the user who they think the randomly indexed image is
@@ -43,6 +46,9 @@ for ii = 1:size(rest_of_the_images,2); %% sets for loop from 1 to 7 (number of r
     z = [z,norm(all_image_signature(ii, :) - s, 2)]; %% creates 1 by 7 row vector for the difference between s and the all image signature values
     drawnow; %% updates the figure in the subplot
 end
+
+%% End of Neil's Coding Section -- Research, Coding, and Debugging took 15 hours 
+
 
 Title = ' ' %% Creates variable Title to use for the title of the right side subplot
 if z == [450195808   400222880    91482416    95078072    37283160    29946568    27731112] %% values for z associated with images of Maia
