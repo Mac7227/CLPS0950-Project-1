@@ -28,9 +28,9 @@ for ii = 1:size(rest_of_the_images,2);     %% creates loop from 1 to 7 (number o
 end %% ends for loop that creates the column of values for the rest of the images to be compared to the indexed image
 
 %% End of Mac's Coding Section -- Research, Coding, and DeBugging took 20 Hours
+%% Debugging by Neil for 10 hours
 
 %% Below Coded by Neil -- Line 34 - 47
-
 
 subplot(121); %% sets location of image below
 imshow(reshape(random_image,287,287)); %% presents the randomly indexed picture to the above location and sets size
