@@ -49,6 +49,7 @@ end
 
 %% End of Neil's Coding Section -- Research, Coding, and Debugging took 15 hours 
 
+%% Coding Below Done by Maia -- Research, Coding, and Debugging took approximately 10 hours
 
 % Title = ' ' %% Creates variable Title to use for the title of the right side subplot
 
@@ -79,6 +80,7 @@ cd ..
 subplot(122); %% sets subplot position
 imshow(reshape(rest_of_the_images(:,ii), 287, 287)); %% shows associated image of the minimum z value
 title(Title, 'FontWeight', 'bold', 'Fontsize', 16, 'color', 'black'); %% changes Title to correct answer name and makes it look nice
+
 
 
     

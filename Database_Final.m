@@ -23,5 +23,6 @@ loaded = 1; %% sets loaded variable equal to 1
 pictures = numeric_image; %% sets output variable equal to the 
 end %% ends the function
 
-%% End of Coding by Mac and Maia -- Research, Coding, and DeBugging took 15 Hours
+%% End of Coding by Mac and Maia -- Research, Coding, and DeBugging took 20 Hours
+%% Research and Coding done by Maia -- took 15 hours; Debugging by Mac -- took 5 hours
 %% This Time Includes -- Acquiring Pictures, Formatting and Editing Pictures, Arranging Folders of Pictures, and Uploading Pictures to be implemented into Database for Code
