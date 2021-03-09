@@ -25,3 +25,4 @@ end %% ends the function
 
 %% End of Coding by Mac and Maia -- Research, Coding, and DeBugging took 15 Hours
 %% This Time Includes -- Acquiring Pictures, Formatting and Editing Pictures, Arranging Folders of Pictures, and Uploading Pictures to be implemented into Database for Code
+%% Additional Debugging from Neil took 10 hours
