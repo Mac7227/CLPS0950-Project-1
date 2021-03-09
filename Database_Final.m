@@ -1,6 +1,6 @@
 %% Below Coding Section by Mac and Maia
-
-function pictures = load_database();  %% creates function to load pictures into database
+% Testing git push
+function pictures = Database_Final()  %% creates function to load pictures into database
 
 persistent loaded; %% creates a persistent variable 'loaded'
 persistent numeric_image; %% creates a persistent variable 'numeric image'
