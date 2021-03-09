@@ -44,22 +44,11 @@ for ii = 1:size(rest_of_the_images,2); %% sets for loop from 1 to 7 (number of r
     drawnow; %% updates the figure in the subplot
 end
 
-Title = ' '; %% Creates variable Title to use for the title of the right side subplot
-if reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac1.jpg') %% values for z associated with images of Maia
-    Title = 'Answer: Maia' %% if it is an image of Maia, change title of subplot to Answer: Maia
-elseif z == [72766848   501024640   501520704   435545184   411867968   422296864   446844160] %% values for z associated with images of Mac
-    Title = 'Answer: Mac' %% if it is an image of Mac, change title of subplot to Answer: Mac
-elseif z == [468156864   416850624    83487584    88209184    16191648    34421992    50217856] %% values for z associated with images of Alli
-    Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
-elseif z == [471238432   416774208    96856664    99641368    35209552    43700248    60755792] %% values for z associated with images of Alli
-    Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
-elseif z == [565344   510235424   510683904   442936256   430861280   432254400   454206752] %% values for z associated with images of Mac
-    Title = 'Answer: Mac' %% if it is an image of Mac, change title of subplot to Answer: Mac
-elseif z == [460469248   413074368    67990864    71935480    14551804     9388728    11828560] %% values for z associated with images of Alli
-    Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
-else %% all other values contributed to Jarred's images
-    Title = 'Answer: Jarred' %% if it is an image of Maia, change title of subplot to Answer: Jarred
-end %% ends the if statements
+if reshape(rest_of_the_images(:,ii), 287, 287) == imread('Alli1.jpg')
+    Title = 'Answer: Alli'
+else
+    Title = 'A'
+end
 
 [a,ii] = min(z); %% sets vector equal to the minimum z and the associated image with the minimum z
 subplot(122); %% sets subplot position
