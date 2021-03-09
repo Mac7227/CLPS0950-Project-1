@@ -52,16 +52,27 @@ end
 
 % Title = ' ' %% Creates variable Title to use for the title of the right side subplot
 
-if reshape(rest_of_the_images(:,ii), 287, 287) == imread('Maia1.jpg') | imread('Maia2.jpg') %%if the image is the same as Maia's images
+cd 'Pictures'
+
+if reshape(rest_of_the_images(:,ii), 287, 287) == imread('Maia1.jpg') %%if the image is the same as Maia's images
     Title = 'Answer: Maia' %%title of subplot is Answer: Maia
-elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac1.jpg') | imread('Mac2.jpg') %%or if the image is the same 
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Maia2.jpg') %%if the image is the same as Maia's images
+    Title = 'Answer: Maia' %%title of subplot is Answer: Maia
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac1.jpg') %%or if the image is the same 
     Title = 'Answer: Mac'
-elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Jarred1.jpg') | imread('Jarred2.jpg')
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac2.jpg') %%or if the image is the same 
+    Title = 'Answer: Mac'
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Jarred1.jpg')
     Title = 'Answer: Jarred'
-elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Neil1.jpg') | imread('Neil2.jpg')
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Jarred2.jpg')
+    Title = 'Answer: Jarred'
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Neil1.jpg')
+    Title = 'Answer: Neil'
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Neil2.jpg')
     Title = 'Answer: Neil'
 end
 
+cd ..
 % if z == [450195808   400222880    91482416    95078072    37283160    29946568    27731112] %% values for z associated with images of Maia
 %     Title = 'Answer: Maia' %% if it is an image of Maia, change title of subplot to Answer: Maia
 % elseif z == [72766848   501024640   501520704   435545184   411867968   422296864   446844160] %% values for z associated with images of Mac
