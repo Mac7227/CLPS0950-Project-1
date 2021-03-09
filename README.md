@@ -9,3 +9,5 @@ In order to play the game, you must first download the code and follow the instr
 
 
 ![Project Gif](https://user-images.githubusercontent.com/79659030/110547513-0a6e9580-80fe-11eb-83ce-9a9355c880b2.gif)
+
+** We had trouble with GitHub until March 8. We met with TA's to resolve the problem and figured out the issues. As a result, our GitHub history starts on March 8.**
