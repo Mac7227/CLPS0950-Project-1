@@ -50,22 +50,33 @@ end
 %% End of Neil's Coding Section -- Research, Coding, and Debugging took 15 hours 
 
 
-Title = ' ' %% Creates variable Title to use for the title of the right side subplot
-if z == [450195808   400222880    91482416    95078072    37283160    29946568    27731112] %% values for z associated with images of Maia
-    Title = 'Answer: Maia' %% if it is an image of Maia, change title of subplot to Answer: Maia
-elseif z == [72766848   501024640   501520704   435545184   411867968   422296864   446844160] %% values for z associated with images of Mac
-    Title = 'Answer: Mac' %% if it is an image of Mac, change title of subplot to Answer: Mac
-elseif z == [468156864   416850624    83487584    88209184    16191648    34421992    50217856] %% values for z associated with images of Alli
-    Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
-elseif z == [471238432   416774208    96856664    99641368    35209552    43700248    60755792] %% values for z associated with images of Alli
-    Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
-elseif z == [565344   510235424   510683904   442936256   430861280   432254400   454206752] %% values for z associated with images of Mac
-    Title = 'Answer: Mac' %% if it is an image of Mac, change title of subplot to Answer: Mac
-elseif z == [460469248   413074368    67990864    71935480    14551804     9388728    11828560] %% values for z associated with images of Alli
-    Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
-else %% all other values contributed to Jarred's images
-    Title = 'Answer: Jarred' %% if it is an image of Maia, change title of subplot to Answer: Jarred
-end %% ends the if statements
+% Title = ' ' %% Creates variable Title to use for the title of the right side subplot
+
+if reshape(rest_of_the_images(:,ii), 287, 287) == imread('Maia1.jpg') | imread('Maia2.jpg') %%if the image is the same as Maia's images
+    Title = 'Answer: Maia' %%title of subplot is Answer: Maia
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Mac1.jpg') | imread('Mac2.jpg') %%or if the image is the same 
+    Title = 'Answer: Mac'
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Jarred1.jpg') | imread('Jarred2.jpg')
+    Title = 'Answer: Jarred'
+elseif reshape(rest_of_the_images(:,ii), 287, 287) == imread('Neil1.jpg') | imread('Neil2.jpg')
+    Title = 'Answer: Neil'
+end
+
+% if z == [450195808   400222880    91482416    95078072    37283160    29946568    27731112] %% values for z associated with images of Maia
+%     Title = 'Answer: Maia' %% if it is an image of Maia, change title of subplot to Answer: Maia
+% elseif z == [72766848   501024640   501520704   435545184   411867968   422296864   446844160] %% values for z associated with images of Mac
+%     Title = 'Answer: Mac' %% if it is an image of Mac, change title of subplot to Answer: Mac
+% elseif z == [468156864   416850624    83487584    88209184    16191648    34421992    50217856] %% values for z associated with images of Alli
+%     Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
+% elseif z == [471238432   416774208    96856664    99641368    35209552    43700248    60755792] %% values for z associated with images of Alli
+%     Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
+% elseif z == [565344   510235424   510683904   442936256   430861280   432254400   454206752] %% values for z associated with images of Mac
+%     Title = 'Answer: Mac' %% if it is an image of Mac, change title of subplot to Answer: Mac
+% elseif z == [460469248   413074368    67990864    71935480    14551804     9388728    11828560] %% values for z associated with images of Alli
+%     Title = 'Answer: Alli' %% if it is an image of Alli, change title of subplot to Answer: Alli
+% else %% all other values contributed to Jarred's images
+%     Title = 'Answer: Jarred' %% if it is an image of Maia, change title of subplot to Answer: Jarred
+% end %% ends the if statements
 
 [a,ii] = min(z); %% sets vector equal to the minimum z and the associated image with the minimum z
 subplot(122); %% sets subplot position
