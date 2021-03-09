@@ -53,6 +53,10 @@ end
 
 % Title = ' ' %% Creates variable Title to use for the title of the right side subplot
 
+[a,ii] = min(z); %% sets vector equal to the minimum z and the associated image with the minimum z
+subplot(122); %% sets subplot position
+imshow(reshape(rest_of_the_images(:,ii), 287, 287)); %% shows associated image of the minimum z value
+
 cd 'Pictures'
 
 if reshape(rest_of_the_images(:,ii), 287, 287) == imread('Maia1.jpg') %%if the image is the same as Maia1
@@ -75,10 +79,6 @@ end %% ends the if statements
 
 cd ..
 
-
-[a,ii] = min(z); %% sets vector equal to the minimum z and the associated image with the minimum z
-subplot(122); %% sets subplot position
-imshow(reshape(rest_of_the_images(:,ii), 287, 287)); %% shows associated image of the minimum z value
 title(Title, 'FontWeight', 'bold', 'Fontsize', 16, 'color', 'black'); %% changes Title to correct answer name and makes it look nice
 
 
