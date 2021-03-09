@@ -5,7 +5,7 @@
 
 %% Below Coded by Mac -- Line 2 through Line 22
 
-loaded_image = load_database(); %% sets loaded image equal to the uploaded database
+loaded_image = Database_Final (); %% sets loaded image equal to the uploaded database
 
 
 random_index = round(7*rand(1)+1); %% creates variable that pulls random numbers from 1 to 8
